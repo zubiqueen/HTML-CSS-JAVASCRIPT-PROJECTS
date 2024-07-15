@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall Clock</title>
+
+  <!-- Whatsapp chat -->
+  <!-- Facebook Post -->
+  <!-- inventory / invoice -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Lato:wght@300;400&display=swap');
+
+    .container {
+      font-family: 'Josefin Sans', sans-serif;
+      /* font-family: 'Lato', sans-serif; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      background-color: blanchedalmond;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .clock {
+      background-color: darksalmon;
+      border: 1px solid rgb(76, 20, 20);
+      border-radius: 50%;
+      width: 450px;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+    }
+
+    .clock>div,
+    .clock>span {
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .clock .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    .clock .min {
+      width: 180px;
+      height: 10px;
+      background-color: rgb(95, 0, 0);
+      left: 50%;
+    }
+
+    .clock .hour {
+      width: 120px;
+      height: 10px;
+      background-color: black;
+      /* left: 50%; */
+      top: 50%;
+      transform: translate(-50%, 0);
+      rotate: 90deg;
+    }
+
+    .clock span {
+      display: block;
+      /* width: 10px; */
+      /* height: 20px; */
+      /* border-radius: 5px; */
+      /* background-color: black; */
+      font-size: 40px;
+      top: 0;
+    }
+
+    .clock .span1 {
+      left: 70%;
+      top: 25px;
+      rotate: 20deg;
+    }
+
+    .clock .span2 {
+      left: 87%;
+      top: 100px;
+      rotate: 60deg;
+    }
+
+    .clock .span3 {
+      left: 93%;
+      top: 45%;
+      rotate: 90deg;
+    }
+
+    .clock .span4 {
+      left: 87%;
+      top: 68%;
+      rotate: 97deg;
+    }
+
+    .clock .span5 {
+      left: 75%;
+      top: 99%;
+      rotate: 100deg;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="clock">
+      <div class="min"></div>
+      <div class="hour"></div>
+      <div class="dot"></div>
+      <span class="span12">12</span>
+      <span class="span1">1</span>
+      <span class="span2">2</span>
+      <span class="span3">3</span>
+      <span class="span4">4</span>
+      <span class="span5">5</span>
+      <span class="span6">6</span>
+      <span class="span7">7</span>
+      <span class="span8">8</span>
+      <span class="span9">9</span>
+      <span class="span10">10</span>
+      <span class="span11">11</span>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.container
+    {
+        width: 94%;
+        height: 500px;
+        background-color: white;
+        border: 8px solid white;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 70px 1fr 70px;
+        
+    }
+    
+    .announcement-bar {
+        --announcement-bar-gutter: .625rem;
+        text-align: center;
+        font-size: var(--announcement-bar-font-size);
+        place-content: center;
+        column-gap: .75rem;
+        padding-block: 0em;
+        padding-inline-start: max(var(--announcement-bar-gutter), 50% - var(--container-max-width) / 10);
+        padding-inline-end: max(var(--announcement-bar-gutter), 50% - var(--container-max-width) / 10);
+        display: flex;
+    }
+    *, :before, :after {
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 0;
+        border-color: rgb(var(--border-color));
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+    #shopify-section-sections--17735488798934__announcement-bar {
+        --announcement-bar-font-size: 0.625rem;
+    }
+    
+    .shopify-section {
+        --section-vertical-spacing: var(--section-with-border-vertical-spacing);
+        --section-vertical-spacing-tight: var(--section-with-border-vertical-spacing-tight);
+    }
+    .banner {
+        position: relative;
+        min-height: 595px;
+        min-width: 1263px;
+        top: 2px;
+        padding-right: 0;
+        background-image: url('https://baroque.com.pk/cdn/shop/files/MAin_BAnner43.jpg?v=1714635953&width=1400');
+        background-size: cover;
+        object-position: center;
+        border-radius: inherit;
+        border: 1px solid black;
+    }
+    
+    .navbar {
+        position: absolute;
+        height: var(--content-over-media-height, auto);
+        top: 1;
+        right: 0;
+        left: 0;
+        display: none;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+    
+    .banner:hover .navbar {
+        display: block;
+    }
+
+    #products{
+        background-color: white;
+        padding-top: 2px;
+        padding-left: 3%;
+    }
+
+    .div2{
+        padding-top: 2px;
+        padding-left: 3%;
+    }
